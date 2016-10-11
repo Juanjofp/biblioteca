@@ -31,7 +31,7 @@ function startServer(db) {
     app.use('/register', registerRoute(db.collection(config.USER_COLLECTION)));
     app.use('/book', bookRoute(db.collection(config.BOOK_COLLECTION)));
 
-	server = app.listen(process.env.PORT || 3010, function started() {
+	server = app.listen(process.env.PORT || 3993, function started() {
 		console.info('Express server listening on Port ' + server.address().port);
 	});
 }
