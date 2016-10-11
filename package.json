@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd src && nodemon main.js --exec babel-node",
+    "build-server": "babel server -d build-server",
     "server": "cd src && babel-node main.js"
   },
   "author": "",
